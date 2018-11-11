@@ -24,4 +24,5 @@
   * [Vue State Management](https://vuex.vuejs.org) - We may be using this lager
   * [Vue Loader](https://vue-loader.vuejs.org)
   * [Other View Resources](https://github.com/vuejs/awesome-vue#resources)
+  * [Vue Material](https://vuematerial.io/) - the UI framework
   
