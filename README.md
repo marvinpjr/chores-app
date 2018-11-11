@@ -10,8 +10,18 @@
   * To run the app, use the command `npm run serve`. The app server will start and keep running. If you are viewing it in your browser, it will update live as you make changes.
   * To simply build the app, use the command `npm run build`.
   * To run a linter and apply fixes, use `npm run lint`.
+
+## Installed Plugins
+  * [Babel](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel)
+  * [ESLint](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint)
   
 ## Important References
-  * [Vue JS](https://vuejs.org/v2/guide/)
-  * [Vuetify](https://vuetifyjs.com/en/getting-started/quick-start)
+  * [Vue JS](https://vuejs.org/v2/guide/)  
+  * [Vue Command Line Interface - CLI](https://cli.vuejs.org)
+  * [Vue Forums](https://forum.vuejs.org)
+  * [Vue Community Chat](https://chat.vuejs.org)
+  * [Vue Router](https://router.vuejs.org) - We will probably be using this later
+  * [Vue State Management](https://vuex.vuejs.org) - We may be using this lager
+  * [Vue Loader](https://vue-loader.vuejs.org)
+  * [Other View Resources](https://github.com/vuejs/awesome-vue#resources)
   
