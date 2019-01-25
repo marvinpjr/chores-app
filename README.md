@@ -21,7 +21,7 @@
   * [Vue Forums](https://forum.vuejs.org)
   * [Vue Community Chat](https://chat.vuejs.org)
   * [Vue Router](https://router.vuejs.org) - We will probably be using this later
-  * [Vue State Management](https://vuex.vuejs.org) - We may be using this lager
+  * [Vue State Management](https://vuex.vuejs.org) - We may be using this later
   * [Vue Loader](https://vue-loader.vuejs.org)
   * [Other View Resources](https://github.com/vuejs/awesome-vue#resources)  
   
