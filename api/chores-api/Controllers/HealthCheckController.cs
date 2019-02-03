@@ -2,19 +2,28 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ChoresApi.Models.Other;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 
 namespace chores_api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class HealthCheckController : ControllerBase
     {
+        private AppConfiguration _appConfig;
+
+        public HealthCheckController(IOptions<AppConfiguration> appConfig)
+        {
+            _appConfig = appConfig.Value;
+        }
+
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<AppConfiguration> Get()
         {
-            return new string[] { "value1", "value2" };
+            return _appConfig;
         }
 
         // GET api/values/5

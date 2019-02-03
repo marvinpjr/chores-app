@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using ChoresApi.Models.Other;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -20,6 +21,12 @@ namespace chores_api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            // configuration
+            services.AddOptions();
+            services.Configure<AppConfiguration>(Configuration.GetSection("AppConfiguration"));
+            services.AddSingleton<IConfiguration>(Configuration);
+
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc("v1",new Info {
                     Title ="Chores Api",
