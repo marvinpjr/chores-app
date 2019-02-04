@@ -45,9 +45,9 @@ namespace chores_api
 
             app.UseMvc();
             app.UseSwagger();
-            app.UseSwaggerUI(c => {
+            app.UseSwaggerUI(c => {                
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Core API");
-                c.RoutePrefix = string.Empty;
+                c.RoutePrefix = "swagger/ui";
             });
         }
     }
